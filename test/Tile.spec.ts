@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils';
 import Tile from '@/components/Tile.vue';
 
 describe('Tile', () => {
-  test('img', () => {
+  test('Title', () => {
     const tileInfo = {
       createdAt: "2021-09-15T01:16:19.162Z",
       author: "Cheryl Dickinson",
@@ -16,6 +16,9 @@ describe('Tile', () => {
       propsData: {
         tileInfo 
       },
+      stubs: {
+        'router-link': true
+      }
     });
     const tileTitle = wrapper.find('[data-testid="tile-title"]');
     expect(tileTitle.text()).toBe("facilis voluptatem repellat");

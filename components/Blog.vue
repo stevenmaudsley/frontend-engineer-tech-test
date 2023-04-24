@@ -1,15 +1,18 @@
 <template>
-  <div>
-    <Tile v-for="(article, i) in articles" :key="i" :tile-info="article"/>
+  <div class="px-md-5">
+    <results :results="articles"/>
   </div>
 </template>
 
 <script type="ts">
 import Vue from "vue"
-import { Tile } from "@/components/Tile.vue";
+import Results from "@/components/Results.vue";
 
 export default Vue.extend({
   name: 'Blog',
+  components: {
+    Results
+  },
   data() {
     return {
         articles: [],
