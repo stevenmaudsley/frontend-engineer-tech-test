@@ -48,7 +48,6 @@ describe('Results', () => {
       },
     });
     const resultTile = wrapper.findAll('[data-testid="result-tile"]')
-    console.log(resultTile.length);
     expect(resultTile.length).toBe(results.length);
   });
 });

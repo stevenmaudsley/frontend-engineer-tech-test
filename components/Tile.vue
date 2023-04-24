@@ -3,7 +3,7 @@
       class="d-flex p-md-3 flex-column d-flex justify-content-center"
   >
       <img
-          class="pic mw-100 align-self-center"
+          class="image mw-100 align-self-center"
           :src="tileInfo.image"
           alt=""
       >
@@ -13,7 +13,7 @@
             class="py-2">{{ tileInfo.title }}
           </h5>
           <p class="text text-black-50 my-3">{{ tileInfo.text }}</p>
-          <router-link class="text-success" :to="`/`">Read more ...</router-link>
+          <router-link class="text-success" :to="`/article/${tileInfo.id}`">Read more ...</router-link>
       </section>
   </div>
 </template>
@@ -34,7 +34,7 @@ props: {
 </script>
 
 <style scoped>
-.pic {
+.image {
   aspect-ratio: 1/1;
 }
 .text {
