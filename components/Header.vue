@@ -1,6 +1,8 @@
 <template>
     <div class="header d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <img src="@/assets/logo.png" alt="">
+        <router-link class="tile-link" :to="`/`">
+            <img src="@/assets/logo.png" alt="">
+        </router-link>
         <search @searched="blogSearched"/>
     </div>
 </template>
