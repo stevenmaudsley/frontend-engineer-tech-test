@@ -1,21 +1,13 @@
 # your-parking-space-blog
 
-## Build Setup
+## Setup: 
 
-```bash
-# install dependencies
-$ npm install
+1. Clone repo
+2. `cd frontend-engineer-tech-test`
+3. `npm install`
+5. `npm run test`
+4. `npm run dev`
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
