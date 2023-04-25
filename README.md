@@ -1,5 +1,7 @@
 # your-parking-space-blog
 
+Used test driven development principle to create a nuxt blog app.
+
 ## Setup: 
 
 1. Clone repo
@@ -7,6 +9,17 @@
 3. `npm install`
 5. `npm run test`
 4. `npm run dev`
+
+Given more time I would have liked to improve on some aspects of my submission.
+
+I would like to have:
+
+1. Added pagination.
+2. Added Storybook.
+3. Added more generic seach and integrated this into the article page.
+4. Abstracted some methods to mixins/exported from seperate files to keep the code more dry.
+5. Added some more useful tests.
+6. Overwritten boostrap css values to create custom utility classes for spacing/colours etc.
 
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
