@@ -29,5 +29,8 @@
     "jest-environment-jsdom": "^29.1.2",
     "ts-jest": "^29.0.3",
     "vue-jest": "^3.0.4"
+  },
+  "engines": {
+      "node": ">=0.10.3 <18"
   }
 }
