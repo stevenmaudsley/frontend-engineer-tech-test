@@ -24,7 +24,7 @@
           >
             {{ tileInfo.text }}
           </p>
-          <router-link class="text-success" :to="`/article/${tileInfo.id}`">Read more ...</router-link>
+          <router-link class="tile-link" :to="`/article/${tileInfo.id}`">Read more ...</router-link>
       </section>
   </div>
 </template>
@@ -70,5 +70,9 @@ export default Vue.extend({
   .image {
     aspect-ratio: 1/1;
   }
+}
+
+.tile-link {
+  color: #2dc98a !important;
 }
 </style>
