@@ -41,5 +41,24 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  router: {
+    extendRoutes(routes, resolve) {
+      return [
+        {
+          name: 'index',
+          path: '/', 
+          component: resolve(__dirname, 'pages/index.vue'),
+          chunkName: 'pages/index'
+        },
+        {
+          name: 'Article',
+          path: '/article/:id', // <--- change this
+          component: resolve(__dirname, 'pages/article.vue'),
+          chunkName: 'pages/article'
+        },
+      ]
+    }
   }
 }
