@@ -12,10 +12,10 @@
           :src="tileInfo.image"
           alt=""
       >
-      <section class="py-5 col-lg-6 px-0" :class="[verticalLayout ? '' : 'px-4 px-md-0 px-lg-4']">
+      <section class="py-5 px-0" :class="[verticalLayout ? '' : 'px-4 px-md-0 px-lg-4 col-lg-6']">
           <h4
             data-testid="tile-title" 
-            class="py-2">{{ tileInfo.title }}
+            class="text-truncate py-2">{{ tileInfo.title }}
           </h4>
           <p
             class="text my-3"
