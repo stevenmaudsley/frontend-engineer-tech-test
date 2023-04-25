@@ -1,6 +1,6 @@
 <template>
   <div
-      class="d-flex d-flex"
+      class="d-flex"
       :class="[
           verticalLayout ? 'flex-column d-flex justify-content-center p-md-3' 
           : 'flex-column flex-lg-row align-items-center p-md-5'

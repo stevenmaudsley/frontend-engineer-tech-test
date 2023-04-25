@@ -2,7 +2,8 @@
     <div class="d-flex row px-5">
         <Tile
             data-testid="result-tile"
-            class="col-12 col-md-4 col-lg-3 px-0" v-for="(result, i) in results"
+            class="col-12 col-md-4 col-lg-3 px-0"
+            v-for="(result, i) in results"
             :key="i"
             :tile-info="result"
         />

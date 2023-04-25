@@ -1,7 +1,7 @@
 <template>
     <div class="position-relative d-flex align-items-center flex-column">
         <h2
-            class="py-3 py-lg-5"
+            class="py-3 py-lg-5 px-5 px-lg-0"
             data-testid="article-title"
         >
             {{ article.title }}
@@ -24,15 +24,20 @@
             alt=""
         >
         <p class="article-text px-5 px-lg-0 py-5">{{ article.text }}</p>
+        <related :title="title" />
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
 import { TileData } from "@/types/types"
+import Related from "@/components/Related.vue"
 
 export default Vue.extend({
   name: 'Article',
+  components: {
+    Related
+  },
   props: {
     article: {
         type: Object as () => TileData,
@@ -46,6 +51,9 @@ export default Vue.extend({
         const month = dateConverted.toLocaleString('default', { month: 'long' });
         const year = dateConverted.getFullYear();
         return `${date}th ${month} ${year}`;
+    },
+    title(): string {
+        return this.article.title;
     }
   },
 });

@@ -10,7 +10,7 @@ import { TileData } from "@/types/types"
 import Article from "@/components/Article.vue"
 
 export default Vue.extend({
-  name: 'article',
+  name: 'articlePage',
   components: {
     Article
   },
